@@ -1,0 +1,52 @@
+completion_text: |-
+  <p>Completado quiz 1</p>
+description: |-
+  Desc quiz 1
+groups:
+- id: intro
+  pages:
+  - content: "<p>Contenido quiz 1</p> "
+    id: welcome
+    title: Quiz
+    type: Page
+- id: quiz_start
+  pages:
+  - answers: [<plain>1]
+    id: quizquestion6
+    prompt: ''
+    title: PReg1
+    type: TextQuestion
+    value: 10.0
+  - choices: ["~CORRECT~ Opci\xF3n 3 correcta", "Opci\xF3n 2", "Opci\xF3n 1"]
+    id: quizquestion7
+    prompt: ''
+    title: Preg 2
+    type: ChoiceQuestion
+    value: 30.0
+  - choices: ["Opci\xF3n 4 mentira", "~CORRECT~ Opci\xF3n 3 rverdad", "Opci\xF3n 2\
+        \ mentira", ~CORRECT~ Opc1 verdad]
+    credit_mode: exact
+    id: quizquestion8
+    prompt: ''
+    shuffle: true
+    title: Pregunta 3
+    type: MultipleChoiceQuestion
+    value: 30.0
+  shuffle: true
+rules:
+  access:
+  - message: "\xA1Bienvenidos! Este mensaje es tra\xEDdo a usted por las reglas de\
+      \ acceso."
+    permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+  grade_aggregation_strategy: max_grade
+  grade_identifier: quiz5
+  grading:
+  - {credit_percent: 100}
+  start:
+  - if_before: 2020-06-30 11:15:23+00:00
+    if_has_fewer_sessions_than: 1
+    if_has_role: [student, ta, instructor]
+    may_list_existing_sessions: true
+    may_start_new_session: true
+  - {may_list_existing_sessions: true, may_start_new_session: false}
+title: Quiz
