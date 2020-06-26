@@ -1,0 +1,25 @@
+chunks:
+- content: ''
+  flows:
+  - flow_id: flow3
+    next_flow: flow4
+    pages:
+    - {flow_id: page9, title: Pg 1}
+    - {flow_id: page10, title: Pg 2}
+    - {flow_id: page11, title: Pg3}
+    title: "M\xF3dulo 1"
+    title_next_flow: "Ver m\xF3dulo 2"
+  - flow_id: flow4
+    next_flow: null
+    pages:
+    - {flow_id: page12, title: Pg1}
+    title: "M\xF3dulo 2"
+    title_next_flow: ''
+  id: welcome
+  introduction: "<p><b>En este curso veremos:</b></p><p>Diferentes tema a revisar,</p><p>Con\
+    \ im\xE1genes&nbsp;<img src=\"https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-06-26/af64d8f8-0ccf-46a1-8e51-c21ea715d0ef.png\"\
+    \ style=\"width: 698px;\"></p><p><br></p><p>Videos:</p><p><iframe frameborder=\"\
+    0\" src=\"//www.youtube.com/embed/QIIEvplcB7k\" width=\"640\" height=\"360\" class=\"\
+    note-video-clip\"></iframe></p><p>Y algo m\xE1s.</p>"
+  rules: []
+  title: "Matem\xE1ticas financieras 2"
