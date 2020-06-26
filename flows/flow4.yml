@@ -1,0 +1,17 @@
+completion_text: |-
+  <p>Texto completado 2</p>
+description: "Descripci\xF3n m\xF3dulo 2"
+next_flow_id: ''
+next_flow_title: ''
+pages:
+- content: |-
+    <p>Mod 2 pg 1</p>
+  id: page12
+  title: Pg1
+  type: Page
+rules:
+  access:
+  - if_has_role: [ta, student, instructor]
+    permissions: [view]
+  grade_identifier: null
+title: "M\xF3dulo 2"
