@@ -1,0 +1,28 @@
+completion_text: |-
+  <p><img src="https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-06-26/4646b7e0-d9f4-4291-9f37-84487b15130e.png" style="width: 698px;"><br></p>
+description: |-
+  Flujo 1
+next_flow_id: flow4
+next_flow_title: "Ver m\xF3dulo 2"
+pages:
+- content: |-
+    <p>Cont Pg1</p>
+  id: page9
+  title: Pg 1
+  type: Page
+- content: |-
+    <p>Cont pg 2</p>
+  id: page10
+  title: Pg 2
+  type: Page
+- content: |-
+    <p>Cont pg3</p>
+  id: page11
+  title: Pg3
+  type: Page
+rules:
+  access:
+  - if_has_role: [ta, student, instructor]
+    permissions: [view]
+  grade_identifier: null
+title: "M\xF3dulo 1"
